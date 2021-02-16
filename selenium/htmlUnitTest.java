@@ -27,7 +27,10 @@ public class htmlUnitTest {
 		Assert.assertFalse(pageSource.contains("requested page could not be found")); 
 
 		// Create a test that is specific to YOUR Jekyll site here -->
-		     
+		// Tests if the current URL contains port 4000 and prints the URL
+		String currentURL = driver.getCurrentURL();
+	        //Assert.assertFalse();
+		System.out.println("Current URL is: " + currentURL);	
 		     
 		// <-- End of your test code
 

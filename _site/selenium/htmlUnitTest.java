@@ -21,7 +21,7 @@ public class htmlUnitTest {
 		// This code will test and print the page title
 		String pageTitle = driver.getTitle();
 		Assert.assertNotEquals(pageTitle, "");
-		Assert.assertFalse(pageTitle.matches("^\\s*$")); // uses regexp, does title=only spaces?
+		Assert.assertFalse(pageTitle.matches("^\\s*$")); // uses regexp, checks if title contains only spaces
 		System.out.println("Page title is: " + pageTitle);
 
 		// This code will check the HTML source for Jekyll 404 errors
@@ -32,8 +32,8 @@ public class htmlUnitTest {
 		// Create a test that is specific to YOUR Jekyll site here -->
 		// Checks if page title contains Monica
 		if (pageTitle.contains("Monica")) {
-			Assert.assertFalse(pageTitle.contains("Monica"));
 			System.out.println("Page title should not contain Monica");
+			Assert.assertFalse(pageTitle.contains("Monica"));
 		}
 
 		// <-- End of your test code

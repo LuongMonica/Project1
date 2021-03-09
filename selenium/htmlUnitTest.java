@@ -32,7 +32,7 @@ public class htmlUnitTest {
 		// Create a test that is specific to YOUR Jekyll site here -->
 		// Checks if page title contains Monica
 		if (pageTitle.contains("Monica")) {
-			System.out.println("Page title should not contain Monica");
+			//System.out.println("Page title should not contain Monica");
 			Assert.assertFalse(pageTitle.contains("Monica"));
 		}
 
